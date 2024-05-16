@@ -5,6 +5,8 @@ from .forms import UsuariForm
 from . import models
 
 
+# py manage.py runserver
+
 # Create your views here:
 def index(request):
     total_users = models.Usuari.objects.count()
