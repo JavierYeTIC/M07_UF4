@@ -29,25 +29,25 @@ def teachers(request):
 def teacher_info(request, id):
     profesor = None
 
-    for key, value in prof.items():
-        if value["id"] == id:
-            profesor = value
-            break
+#     for key, value in prof.items():
+#         if value["id"] == id:
+#             profesor = value
+#             break
 
-    context = {"profs": profesor}
-    return render(request, "teacher_info.html", context)
+#     context = {"profs": profesor}
+#     return render(request, "teacher_info.html", context)
 
 
-def student_info(request, id):
-    alumne = None
+# def student_info(request, id):
+#     alumne = None
 
-    for key, value in alum.items():
-        if value["id"] == id:
-            alumne = value
-            break
+#     for key, value in alum.items():
+#         if value["id"] == id:
+#             alumne = value
+#             break
 
-    context = {"alum": alumne}
-    return render(request, "student_info.html", context)
+#     context = {"alum": alumne}
+#     return render(request, "student_info.html", context)
 
 
 def user_form(request):
